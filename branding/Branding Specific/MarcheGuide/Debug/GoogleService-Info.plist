@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>244779626777-8nvbq40cu0u3hgaphdgb4op8fj0dbfqn.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.244779626777-8nvbq40cu0u3hgaphdgb4op8fj0dbfqn</string>
+	<key>API_KEY</key>
+	<string>AIzaSyA7EBcFCajSU8h7Iir5974r6Dxfv9hyvPs</string>
+	<key>GCM_SENDER_ID</key>
+	<string>244779626777</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>ru.com.technolab.marcheguide</string>
+	<key>PROJECT_ID</key>
+	<string>marche-guide</string>
+	<key>STORAGE_BUCKET</key>
+	<string>marche-guide.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:244779626777:ios:34e6a3b45b1a6705395588</string>
+	<key>DATABASE_URL</key>
+	<string>https://marche-guide.firebaseio.com</string>
+</dict>
+</plist>

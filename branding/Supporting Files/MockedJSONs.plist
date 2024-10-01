@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Home</key>
+	<string>[
+  {
+    &quot;name&quot;: &quot;&quot;,
+    &quot;title&quot;: &quot;&quot;,
+    &quot;subtitle&quot;: &quot;&quot;,
+    &quot;url&quot;: &quot;/page/about&quot;,
+    &quot;styles&quot;: &quot;&quot;,
+    &quot;image&quot;: &quot;https://api-navigator-new.primeconcept.co.uk/v1/files/4b6964d5-0a5c-4328-bc4a-956f61f71eca&quot;,
+    &quot;screen&quot;: &quot;place&quot;,
+    &quot;half&quot;: false
+  },
+  {
+    &quot;name&quot;: &quot;До начала фестиваля |Путешествие в Рождество &quot;,
+    &quot;title&quot;: &quot;До начала фестиваля |Путешествие в Рождество &quot;,
+    &quot;subtitle&quot;: &quot;&quot;,
+    &quot;url&quot;: &quot;/events/type/blagotvoritelnost&quot;,
+    &quot;styles&quot;: &quot;&quot;,
+    &quot;image&quot;: &quot;https://api-navigator-new.primeconcept.co.uk/v1/files/815c051f-b19b-4d12-ac46-5190d2faed93&quot;,
+    &quot;screen&quot;: &quot;feature_fest&quot;,
+    &quot;half&quot;: false,
+    &quot;counter&quot;: &quot;2018-12-22T10:00:00.000Z&quot;
+  },
+  {
+    &quot;name&quot;: &quot;События сегодня&quot;,
+    &quot;title&quot;: &quot;События сегодня&quot;,
+    &quot;subtitle&quot;: &quot;&quot;,
+    &quot;url&quot;: &quot;/events/type/today&quot;,
+    &quot;styles&quot;: &quot;short small left&quot;,
+    &quot;image&quot;: &quot;https://api-navigator-new.primeconcept.co.uk/v1/files/90775734-539b-429d-a8ab-ee114908011b&quot;,
+    &quot;screen&quot;: &quot;events&quot;,
+    &quot;half&quot;: true
+  },
+  {
+    &quot;name&quot;: &quot;Площадки&quot;,
+    &quot;title&quot;: &quot;Площадки&quot;,
+    &quot;subtitle&quot;: &quot;&quot;,
+    &quot;url&quot;: &quot;/places&quot;,
+    &quot;styles&quot;: &quot;short small right&quot;,
+    &quot;image&quot;: &quot;https://api-navigator-new.primeconcept.co.uk/v1/files/77bfe79d-d480-4d08-8ada-1178945fe18c&quot;,
+    &quot;screen&quot;: &quot;places&quot;,
+    &quot;half&quot;: true
+  },
+  {
+    &quot;name&quot;: &quot;Выставки&quot;,
+    &quot;title&quot;: &quot;Выставки&quot;,
+    &quot;subtitle&quot;: &quot;&quot;,
+    &quot;url&quot;: &quot;/events/type/exhibition&quot;,
+    &quot;styles&quot;: &quot;&quot;,
+    &quot;image&quot;: &quot;https://api-navigator-new.primeconcept.co.uk/v1/files/767d6ec1-64fb-4d96-b7c3-c6c7b955cb5a&quot;,
+    &quot;screen&quot;: &quot;events&quot;,
+    &quot;half&quot;: false
+  },
+  {
+    &quot;name&quot;: &quot;Расписание&quot;,
+    &quot;title&quot;: &quot;Расписание&quot;,
+    &quot;subtitle&quot;: &quot;&quot;,
+    &quot;url&quot;: &quot;/events&quot;,
+    &quot;styles&quot;: &quot;short small left&quot;,
+    &quot;image&quot;: &quot;https://api-navigator-new.primeconcept.co.uk/v1/files/d2295ba2-1b1b-4bcc-94e8-2759b1d3ac15&quot;,
+    &quot;screen&quot;: &quot;events&quot;,
+    &quot;half&quot;: true
+  },
+  {
+    &quot;name&quot;: &quot;Карта&quot;,
+    &quot;title&quot;: &quot;Карта&quot;,
+    &quot;subtitle&quot;: &quot;&quot;,
+    &quot;url&quot;: &quot;/places&quot;,
+    &quot;styles&quot;: &quot;short small right&quot;,
+    &quot;image&quot;: &quot;https://api-navigator-new.primeconcept.co.uk/v1/files/40b44dc9-41de-48ab-847f-a5d4de8740c5&quot;,
+    &quot;screen&quot;: &quot;map&quot;,
+    &quot;half&quot;: true
+  },
+  {
+    &quot;name&quot;: &quot;Парки&quot;,
+    &quot;title&quot;: &quot;Парки&quot;,
+    &quot;subtitle&quot;: &quot;&quot;,
+    &quot;url&quot;: &quot;/places/type/parks&quot;,
+    &quot;styles&quot;: &quot;&quot;,
+    &quot;image&quot;: &quot;https://api-navigator-new.primeconcept.co.uk/v1/files/06793a05-afe8-49b2-b19a-74f5af262215&quot;,
+    &quot;screen&quot;: &quot;places&quot;,
+    &quot;half&quot;: false
+  },
+  {
+    &quot;name&quot;: &quot;Рестораны&quot;,
+    &quot;title&quot;: &quot;Рестораны&quot;,
+    &quot;subtitle&quot;: &quot;&quot;,
+    &quot;url&quot;: &quot;/restaurants/&quot;,
+    &quot;styles&quot;: &quot;&quot;,
+    &quot;image&quot;: &quot;https://api-navigator-new.primeconcept.co.uk/v1/files/a0b336fa-874d-4895-9e99-8f88cddc5599&quot;,
+    &quot;screen&quot;: &quot;restaurants&quot;,
+    &quot;half&quot;: false
+  },
+  {
+    &quot;name&quot;: &quot;Купить билеты&quot;,
+    &quot;title&quot;: &quot;Купить билеты&quot;,
+    &quot;subtitle&quot;: &quot;&quot;,
+    &quot;url&quot;: &quot;/events/type/other&quot;,
+    &quot;styles&quot;: &quot;&quot;,
+    &quot;image&quot;: &quot;https://api-navigator-new.primeconcept.co.uk/v1/files/df6f9176-2475-464f-af32-5d0de4ff05ab&quot;,
+    &quot;screen&quot;: &quot;events&quot;,
+    &quot;half&quot;: false
+  },
+  {
+    &quot;name&quot;: &quot;Купить билеты 1&quot;,
+    &quot;title&quot;: &quot;Купить билеты 1&quot;,
+    &quot;subtitle&quot;: &quot;&quot;,
+    &quot;url&quot;: &quot;/events/type/other&quot;,
+    &quot;styles&quot;: &quot;&quot;,
+    &quot;image&quot;: &quot;https://api-navigator-new.primeconcept.co.uk/v1/files/df6f9176-2475-464f-af32-5d0de4ff05ab&quot;,
+    &quot;screen&quot;: &quot;events&quot;,
+    &quot;half&quot;: false
+  },
+  {
+    &quot;name&quot;: &quot;Купить билеты 2&quot;,
+    &quot;title&quot;: &quot;Купить билеты 2&quot;,
+    &quot;subtitle&quot;: &quot;&quot;,
+    &quot;url&quot;: &quot;/events/type/other&quot;,
+    &quot;styles&quot;: &quot;&quot;,
+    &quot;image&quot;: &quot;https://api-navigator-new.primeconcept.co.uk/v1/files/df6f9176-2475-464f-af32-5d0de4ff05ab&quot;,
+    &quot;screen&quot;: &quot;events&quot;,
+    &quot;half&quot;: false
+  }
+]</string>
+</dict>
+</plist>

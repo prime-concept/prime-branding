@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" rowHeight="65" id="zgk-DM-GBg" customClass="LoginButtonsTableViewCell" customModule="MoscowSeasons" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="65"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="zgk-DM-GBg" id="On8-2U-4E9">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="64.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ouu-mP-qRE">
+                        <rect key="frame" x="240" y="29.5" width="30" height="32"/>
+                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="16"/>
+                        <connections>
+                            <action selector="onForgetButtonTouched:" destination="zgk-DM-GBg" eventType="touchUpInside" id="Qi2-bn-p4e"/>
+                        </connections>
+                    </button>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jzp-ch-H1u">
+                        <rect key="frame" x="300" y="20.5" width="30" height="50"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="50" id="OB7-Jx-3bS"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="16"/>
+                        <connections>
+                            <action selector="onLoginButtonTouched:" destination="zgk-DM-GBg" eventType="touchUpInside" id="tUw-wP-NSw"/>
+                        </connections>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="Jzp-ch-H1u" secondAttribute="bottom" constant="10" id="Gi4-Iw-7RY"/>
+                    <constraint firstItem="ouu-mP-qRE" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="On8-2U-4E9" secondAttribute="leading" constant="10" id="JRH-cM-d62"/>
+                    <constraint firstItem="Jzp-ch-H1u" firstAttribute="top" secondItem="On8-2U-4E9" secondAttribute="top" constant="20" id="N7p-rg-Ofq"/>
+                    <constraint firstItem="Jzp-ch-H1u" firstAttribute="leading" secondItem="ouu-mP-qRE" secondAttribute="trailing" constant="30" id="Q2y-OD-Vfc"/>
+                    <constraint firstAttribute="trailing" secondItem="Jzp-ch-H1u" secondAttribute="trailing" constant="45" id="o8H-eX-zEJ"/>
+                    <constraint firstItem="ouu-mP-qRE" firstAttribute="centerY" secondItem="Jzp-ch-H1u" secondAttribute="centerY" id="sJp-tf-T2b"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="forgetPasswordButton" destination="ouu-mP-qRE" id="Eqt-Jt-9A8"/>
+                <outlet property="loginButton" destination="Jzp-ch-H1u" id="3kK-yM-KI8"/>
+            </connections>
+            <point key="canvasLocation" x="138.40000000000001" y="163.26836581709148"/>
+        </tableViewCell>
+    </objects>
+</document>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>827515195718-i9rfho5inlc06ck01s8n8fnk11eo0qii.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.827515195718-i9rfho5inlc06ck01s8n8fnk11eo0qii</string>
+	<key>ANDROID_CLIENT_ID</key>
+	<string>827515195718-l8fl2ptbedl3bkblbkpsro9h5grh5h74.apps.googleusercontent.com</string>
+	<key>API_KEY</key>
+	<string>AIzaSyB0AR572K6eFovJJ4nTbe7zSUULuhlMle8</string>
+	<key>GCM_SENDER_ID</key>
+	<string>827515195718</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>ru.primepass.mosseasons.debug</string>
+	<key>PROJECT_ID</key>
+	<string>moscowfest-b1c2b</string>
+	<key>STORAGE_BUCKET</key>
+	<string>moscowfest-b1c2b.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:827515195718:ios:9087d6089fe6cd210b1547</string>
+	<key>DATABASE_URL</key>
+	<string>https://moscowfest-b1c2b.firebaseio.com</string>
+</dict>
+</plist>

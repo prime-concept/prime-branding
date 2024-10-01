@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="QuestSmallTileView" customModule="MoscowSeasons" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="150"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="right" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="quest-status-available" translatesAutoresizingMaskIntoConstraints="NO" id="ZJy-Db-LBM">
+                    <rect key="frame" x="284" y="10" width="91" height="20"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="20" id="aKB-K6-IDb"/>
+                        <constraint firstAttribute="width" constant="91" id="k74-7F-amJ"/>
+                    </constraints>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="quest-cup-icon" translatesAutoresizingMaskIntoConstraints="NO" id="Ysb-Ql-5kl">
+                    <rect key="frame" x="10" y="122" width="16" height="16"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="color" keyPath="tintColor">
+                            <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2yc-o6-6Wf">
+                    <rect key="frame" x="31" y="121.5" width="329" height="17"/>
+                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="14"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="c2t-aN-9gO">
+                    <rect key="frame" x="10" y="95.5" width="350" height="20"/>
+                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="16"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="2yc-o6-6Wf" firstAttribute="top" secondItem="c2t-aN-9gO" secondAttribute="bottom" constant="6" id="5a3-Yy-mak"/>
+                <constraint firstItem="Ysb-Ql-5kl" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="10" id="Big-AH-H01"/>
+                <constraint firstAttribute="bottom" secondItem="Ysb-Ql-5kl" secondAttribute="bottom" constant="12" id="Ioe-8X-7eR"/>
+                <constraint firstItem="2yc-o6-6Wf" firstAttribute="leading" secondItem="Ysb-Ql-5kl" secondAttribute="trailing" constant="5" id="KcU-e4-qGG"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="2yc-o6-6Wf" secondAttribute="trailing" constant="15" id="agZ-JU-hfa"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="ZJy-Db-LBM" secondAttribute="trailing" id="cc5-pa-1lz"/>
+                <constraint firstItem="2yc-o6-6Wf" firstAttribute="centerY" secondItem="Ysb-Ql-5kl" secondAttribute="centerY" id="ite-ci-Tyz"/>
+                <constraint firstItem="ZJy-Db-LBM" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="10" id="m6m-gE-k2d"/>
+                <constraint firstItem="c2t-aN-9gO" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="10" id="wNL-Ky-MxL"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="c2t-aN-9gO" secondAttribute="trailing" constant="15" id="yEK-u1-ZyT"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <connections>
+                <outlet property="pointsDescriptionLabel" destination="2yc-o6-6Wf" id="iVY-xr-ror"/>
+                <outlet property="statusImageView" destination="ZJy-Db-LBM" id="wcG-aE-y6Y"/>
+                <outlet property="titleLabel" destination="c2t-aN-9gO" id="5BY-By-SXD"/>
+            </connections>
+            <point key="canvasLocation" x="53.600000000000001" y="-184.40779610194903"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="quest-cup-icon" width="16" height="16"/>
+        <image name="quest-status-available" width="85" height="20"/>
+    </resources>
+</document>

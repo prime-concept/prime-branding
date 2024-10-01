@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="AuthViewController" customModule="Armenia_Guide" customModuleProvider="target">
+            <connections>
+                <outlet property="logInButton" destination="RrF-rx-IAE" id="cfq-pu-SmS"/>
+                <outlet property="loyaltyBackgroundView" destination="eu7-Oi-57j" id="D7S-TT-tIW"/>
+                <outlet property="signInButton" destination="8BS-Jc-J6i" id="R1H-k6-XUx"/>
+                <outlet property="stackButtons" destination="qeM-o1-XyC" id="sOO-Kr-PUo"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="dPw-3F-fPS">
+                    <rect key="frame" x="142.5" y="103" width="90" height="90"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="90" id="LQN-dv-S4k"/>
+                        <constraint firstAttribute="width" constant="90" id="qqC-LT-AGL"/>
+                    </constraints>
+                </imageView>
+                <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="qeM-o1-XyC">
+                    <rect key="frame" x="10" y="221" width="355" height="152"/>
+                </stackView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eu7-Oi-57j">
+                    <rect key="frame" x="15" y="388" width="345" height="220"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="eu7-Oi-57j" secondAttribute="height" multiplier="345:220" id="VkZ-q4-1FP"/>
+                    </constraints>
+                </view>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8BS-Jc-J6i">
+                    <rect key="frame" x="35" y="623" width="30" height="29"/>
+                    <fontDescription key="fontDescription" type="system" weight="medium" pointSize="14"/>
+                    <state key="normal">
+                        <color key="titleColor" red="0.15294117647058825" green="0.13725490196078433" blue="0.38039215686274508" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="onSignInButtonTouched:" destination="-1" eventType="touchUpInside" id="cIA-P7-Cw6"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RrF-rx-IAE">
+                    <rect key="frame" x="310" y="623" width="30" height="29"/>
+                    <fontDescription key="fontDescription" type="system" weight="medium" pointSize="14"/>
+                    <state key="normal">
+                        <color key="titleColor" red="0.15294117647058825" green="0.13725490196078433" blue="0.38039215686274508" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="onLogInButtonTouched:" destination="-1" eventType="touchUpInside" id="g1T-M1-90v"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="qeM-o1-XyC" firstAttribute="top" secondItem="dPw-3F-fPS" secondAttribute="bottom" constant="15" id="3Eo-4i-TkF"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="eu7-Oi-57j" secondAttribute="trailing" constant="15" id="7WN-ee-Ynm"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="RrF-rx-IAE" secondAttribute="trailing" constant="35" id="8LA-r2-gNl"/>
+                <constraint firstItem="qeM-o1-XyC" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="10" id="Cow-ve-0Vf"/>
+                <constraint firstItem="8BS-Jc-J6i" firstAttribute="top" secondItem="eu7-Oi-57j" secondAttribute="bottom" constant="15" id="Ihx-m5-jQ6"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="RrF-rx-IAE" secondAttribute="bottom" constant="15" id="ODH-EY-CPn"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="8BS-Jc-J6i" secondAttribute="bottom" constant="15" id="cWy-e7-i6Y"/>
+                <constraint firstItem="eu7-Oi-57j" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="15" id="fDk-8b-OWq"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="qeM-o1-XyC" secondAttribute="trailing" constant="10" id="nwa-se-QCS"/>
+                <constraint firstItem="dPw-3F-fPS" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" id="t9u-By-nWa"/>
+                <constraint firstItem="eu7-Oi-57j" firstAttribute="top" secondItem="qeM-o1-XyC" secondAttribute="bottom" constant="15" id="vRS-ZC-la0"/>
+                <constraint firstItem="8BS-Jc-J6i" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="35" id="zD7-O4-UIv"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <point key="canvasLocation" x="138" y="127"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="logo" width="212" height="112"/>
+    </resources>
+</document>

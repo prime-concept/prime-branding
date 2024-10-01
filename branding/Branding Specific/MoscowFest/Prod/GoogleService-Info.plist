@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>843196096065-himct5cfud6t09pbdc4e23gtacr35f32.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.843196096065-himct5cfud6t09pbdc4e23gtacr35f32</string>
+	<key>ANDROID_CLIENT_ID</key>
+	<string>843196096065-jdoe8r01v75mhhmjdo2o96biu9auq6f9.apps.googleusercontent.com</string>
+	<key>API_KEY</key>
+	<string>AIzaSyDnNcBWwOSTf43w1_xMtis5BU8p1XwYUTo</string>
+	<key>GCM_SENDER_ID</key>
+	<string>843196096065</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>ru.primepass.mosseasons</string>
+	<key>PROJECT_ID</key>
+	<string>mosfest</string>
+	<key>STORAGE_BUCKET</key>
+	<string>mosfest.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:843196096065:ios:806721d8906da6ec62b0c0</string>
+</dict>
+</plist>

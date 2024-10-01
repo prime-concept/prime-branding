@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="RateViewController" customModule="MoscowFest" customModuleProvider="target">
+            <connections>
+                <outlet property="stackView" destination="gWn-rz-7SG" id="oqI-GD-31E"/>
+                <outlet property="view" destination="pxh-9C-AMj" id="IWE-xc-tHs"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="pxh-9C-AMj">
+            <rect key="frame" x="0.0" y="0.0" width="395" height="413"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="gWn-rz-7SG">
+                    <rect key="frame" x="0.0" y="30" width="395" height="383"/>
+                </stackView>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="W62-Ik-Y6x" firstAttribute="trailing" secondItem="gWn-rz-7SG" secondAttribute="trailing" id="3vN-3V-gWN"/>
+                <constraint firstItem="gWn-rz-7SG" firstAttribute="leading" secondItem="W62-Ik-Y6x" secondAttribute="leading" id="Cz9-4D-Szw"/>
+                <constraint firstItem="W62-Ik-Y6x" firstAttribute="bottom" secondItem="gWn-rz-7SG" secondAttribute="bottom" id="E9t-39-a4P"/>
+                <constraint firstItem="gWn-rz-7SG" firstAttribute="top" secondItem="W62-Ik-Y6x" secondAttribute="top" constant="30" id="WmI-uQ-OOJ"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="W62-Ik-Y6x"/>
+            <point key="canvasLocation" x="42.399999999999999" y="296.40179910044981"/>
+        </view>
+    </objects>
+</document>

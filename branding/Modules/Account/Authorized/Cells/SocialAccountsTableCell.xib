@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="110" id="KGk-i7-Jjw" customClass="SocialAccountsTableCell" customModule="Armenia_Guide" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="110"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="109.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Наши аккаунты в соцсетях" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HSe-Q6-zZA">
+                        <rect key="frame" x="81" y="15" width="158" height="20.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <color key="textColor" red="0.50196078430000002" green="0.50196078430000002" blue="0.50196078430000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="rtx-Ic-VTt">
+                        <rect key="frame" x="49.5" y="50.5" width="221" height="44"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Iuq-cz-B6Q">
+                                <rect key="frame" x="0.0" y="0.0" width="44" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="Iuq-cz-B6Q" secondAttribute="height" multiplier="1:1" id="he8-Yi-FNd"/>
+                                </constraints>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nFk-Hy-dHe">
+                                <rect key="frame" x="59" y="0.0" width="44" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="nFk-Hy-dHe" secondAttribute="height" multiplier="1:1" id="MeW-tR-pC9"/>
+                                </constraints>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hFf-8x-NlK">
+                                <rect key="frame" x="118" y="0.0" width="44" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="hFf-8x-NlK" secondAttribute="height" multiplier="1:1" id="sSN-3K-VzZ"/>
+                                </constraints>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YJ5-kd-7iy">
+                                <rect key="frame" x="177" y="0.0" width="44" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="YJ5-kd-7iy" secondAttribute="height" multiplier="1:1" id="Hdg-z0-KZi"/>
+                                </constraints>
+                            </button>
+                        </subviews>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="44" id="g7d-hj-87f"/>
+                        </constraints>
+                    </stackView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="rtx-Ic-VTt" firstAttribute="top" secondItem="HSe-Q6-zZA" secondAttribute="bottom" constant="15" id="0fv-Lq-be4"/>
+                    <constraint firstItem="rtx-Ic-VTt" firstAttribute="centerX" secondItem="HSe-Q6-zZA" secondAttribute="centerX" id="PhI-yU-pfW"/>
+                    <constraint firstAttribute="bottom" secondItem="rtx-Ic-VTt" secondAttribute="bottom" constant="15" id="mEm-mz-N3y"/>
+                    <constraint firstItem="HSe-Q6-zZA" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="wWt-5L-liK"/>
+                    <constraint firstItem="HSe-Q6-zZA" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="15" id="wwT-Nd-xUS"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="accountsTitleLabel" destination="HSe-Q6-zZA" id="y57-DC-vrB"/>
+                <outlet property="fbButton" destination="Iuq-cz-B6Q" id="ZOK-Ue-3nd"/>
+                <outlet property="instagramButton" destination="hFf-8x-NlK" id="jub-Vc-3wB"/>
+                <outlet property="vkButton" destination="nFk-Hy-dHe" id="c1l-GY-5tS"/>
+                <outlet property="youtubeButton" destination="YJ5-kd-7iy" id="yiq-cK-VR8"/>
+            </connections>
+            <point key="canvasLocation" x="33" y="36"/>
+        </tableViewCell>
+    </objects>
+</document>

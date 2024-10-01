@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="114" id="FTf-Ci-wfA" customClass="PrimeLoyaltyTableViewCell" customModule="Armenia_Guide" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="385" height="183"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="FTf-Ci-wfA" id="rbi-7w-EkF">
+                <rect key="frame" x="0.0" y="0.0" width="385" height="182.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ndm-a9-ZGT">
+                        <rect key="frame" x="15" y="15" width="355" height="155.5"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="Ndm-a9-ZGT" firstAttribute="top" secondItem="rbi-7w-EkF" secondAttribute="top" constant="15" id="7JW-UJ-IYp"/>
+                    <constraint firstItem="Ndm-a9-ZGT" firstAttribute="leading" secondItem="rbi-7w-EkF" secondAttribute="leading" constant="15" id="ED2-Gz-oKJ"/>
+                    <constraint firstAttribute="bottom" secondItem="Ndm-a9-ZGT" secondAttribute="bottom" constant="12" id="Xe1-ke-apE"/>
+                    <constraint firstAttribute="trailing" secondItem="Ndm-a9-ZGT" secondAttribute="trailing" constant="15" id="e5h-Ay-Fv2"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="view" destination="Ndm-a9-ZGT" id="6kW-Mu-pLW"/>
+            </connections>
+            <point key="canvasLocation" x="170.40000000000001" y="165.96701649175412"/>
+        </tableViewCell>
+    </objects>
+</document>

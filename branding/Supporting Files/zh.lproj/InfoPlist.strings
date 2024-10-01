@@ -1,0 +1,15 @@
+/* 
+  InfoPlist.strings
+  branding
+
+  Created by Denis Tikhomirov on 26.09.2018.
+  Copyright © 2018 Ostrenkiy. All rights reserved.
+*/
+
+"NSLocationWhenInUseUsageDescription" = "我们想向您展示最近的大厅，以及天文馆内更好的参考点。";
+"NSLocationAlwaysAndWhenInUseUsageDescription" = "我们想向您展示最近的大厅，以及天文馆内更好的参考点。";
+"NSLocationAlwaysUsageDescription" = "我们想向您展示最近的大厅，以及天文馆内更好的参考点。";
+"NSCalendarsUsageDescription" = "我们想在您的日历中添加活动。";
+"NSCameraUsageDescription" = "您可以在这些地方扫描QR并获得Moscow Seasons的忠诚度";
+LoyaltyShortcut = "會員卡";
+TicketsShortcut = "我的門票";

@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="DrJ-9J-DTY" customClass="DetailPlaceTileView" customModule="Armenia_Guide" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="114"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MKO-MQ-FJp">
+                    <rect key="frame" x="15" y="36.5" width="41.5" height="19.5"/>
+                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="16"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YVa-hA-EDM">
+                    <rect key="frame" x="15" y="84" width="8" height="8"/>
+                    <color key="backgroundColor" red="0.30980392159999998" green="0.68235294120000001" blue="0.3294117647" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="8" id="CYH-2j-KWn"/>
+                        <constraint firstAttribute="width" constant="8" id="EXV-eE-so2"/>
+                    </constraints>
+                </view>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="F2q-ca-UIK">
+                    <rect key="frame" x="15" y="80.5" width="32.5" height="14.5"/>
+                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="12"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vvr-x2-8XA">
+                    <rect key="frame" x="15" y="61" width="32.5" height="14.5"/>
+                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="12"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7SC-oa-AGQ" customClass="BlurView" customModule="Armenia_Guide" customModuleProvider="target">
+                    <rect key="frame" x="7" y="7" width="36.5" height="14.5"/>
+                    <subviews>
+                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="300 м" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ASy-5f-8ms" customClass="PaddingLabel" customModule="Armenia_Guide" customModuleProvider="target">
+                            <rect key="frame" x="0.0" y="0.0" width="36.5" height="14.5"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="12"/>
+                            <color key="textColor" red="1" green="1" blue="1" alpha="0.65000000000000002" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="topInset">
+                                    <integer key="value" value="3"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="number" keyPath="bottomInset">
+                                    <integer key="value" value="3"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="number" keyPath="leftInset">
+                                    <integer key="value" value="10"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="number" keyPath="rightInset">
+                                    <integer key="value" value="10"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                    <integer key="value" value="10"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="ASy-5f-8ms" secondAttribute="trailing" id="IaB-lw-fNY"/>
+                        <constraint firstItem="ASy-5f-8ms" firstAttribute="top" secondItem="7SC-oa-AGQ" secondAttribute="top" id="MeI-n5-Rgg"/>
+                        <constraint firstItem="ASy-5f-8ms" firstAttribute="leading" secondItem="7SC-oa-AGQ" secondAttribute="leading" id="Mfh-DK-3ox"/>
+                        <constraint firstAttribute="bottom" secondItem="ASy-5f-8ms" secondAttribute="bottom" id="P6O-PY-Kaz"/>
+                    </constraints>
+                </view>
+                <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Программа лояльности" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vsP-v8-xkt" customClass="PaddingLabel" customModule="Armenia_Guide" customModuleProvider="target">
+                    <rect key="frame" x="235.5" y="7" width="139.5" height="14.5"/>
+                    <color key="backgroundColor" red="0.1529411765" green="0.13725490200000001" blue="0.3803921569" alpha="1" colorSpace="calibratedRGB"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="topInset">
+                            <integer key="value" value="2"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="bottomInset">
+                            <integer key="value" value="2"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="leftInset">
+                            <integer key="value" value="10"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="rightInset">
+                            <integer key="value" value="10"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </label>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="YVa-hA-EDM" firstAttribute="centerY" secondItem="F2q-ca-UIK" secondAttribute="centerY" id="4mA-1r-9A6"/>
+                <constraint firstAttribute="bottom" secondItem="F2q-ca-UIK" secondAttribute="bottom" constant="19" id="6uD-Ua-LRv"/>
+                <constraint firstItem="rZg-OW-4Fh" firstAttribute="bottom" secondItem="Vvr-x2-8XA" secondAttribute="bottom" priority="250" constant="19" id="BoV-Sd-JH6"/>
+                <constraint firstAttribute="trailing" secondItem="vsP-v8-xkt" secondAttribute="trailing" id="K0f-TQ-5fY"/>
+                <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="MKO-MQ-FJp" secondAttribute="trailing" constant="10" id="KZZ-oD-XCk"/>
+                <constraint firstItem="F2q-ca-UIK" firstAttribute="leading" secondItem="YVa-hA-EDM" secondAttribute="leading" id="PTn-4W-mv1"/>
+                <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="Vvr-x2-8XA" secondAttribute="trailing" constant="10" id="QQn-C4-TSR"/>
+                <constraint firstItem="MKO-MQ-FJp" firstAttribute="top" relation="greaterThanOrEqual" secondItem="7SC-oa-AGQ" secondAttribute="bottom" constant="5" id="Rna-O5-VDz"/>
+                <constraint firstItem="YVa-hA-EDM" firstAttribute="leading" secondItem="DrJ-9J-DTY" secondAttribute="leading" constant="15" id="bcw-dG-C3W"/>
+                <constraint firstItem="vsP-v8-xkt" firstAttribute="top" secondItem="rZg-OW-4Fh" secondAttribute="top" constant="7" id="cY3-cg-Imf"/>
+                <constraint firstItem="F2q-ca-UIK" firstAttribute="top" secondItem="Vvr-x2-8XA" secondAttribute="bottom" priority="750" constant="5" id="lQB-sR-B5J"/>
+                <constraint firstItem="Vvr-x2-8XA" firstAttribute="leading" secondItem="DrJ-9J-DTY" secondAttribute="leading" constant="15" id="rcs-ec-Fv0"/>
+                <constraint firstItem="7SC-oa-AGQ" firstAttribute="leading" secondItem="rZg-OW-4Fh" secondAttribute="leading" constant="7" id="rsd-k9-sBh"/>
+                <constraint firstItem="7SC-oa-AGQ" firstAttribute="top" secondItem="rZg-OW-4Fh" secondAttribute="top" constant="7" id="tc3-ly-jNo"/>
+                <constraint firstItem="MKO-MQ-FJp" firstAttribute="leading" secondItem="DrJ-9J-DTY" secondAttribute="leading" constant="15" id="xi2-Vj-JZj"/>
+                <constraint firstItem="Vvr-x2-8XA" firstAttribute="top" secondItem="MKO-MQ-FJp" secondAttribute="bottom" constant="5" id="y7p-0M-GfI"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="rZg-OW-4Fh"/>
+            <connections>
+                <outlet property="addressBottomConstraintToMetroLabel" destination="lQB-sR-B5J" id="hMk-Fr-UpE"/>
+                <outlet property="addressBottomConstraintToSafeArea" destination="BoV-Sd-JH6" id="sfo-KO-koz"/>
+                <outlet property="addressLabel" destination="Vvr-x2-8XA" id="Btc-Fk-t42"/>
+                <outlet property="blurView" destination="7SC-oa-AGQ" id="Wa8-AW-vdJ"/>
+                <outlet property="distanceLabel" destination="ASy-5f-8ms" id="BMg-4e-rUi"/>
+                <outlet property="loyaltyLabel" destination="vsP-v8-xkt" id="AzP-xJ-i6h"/>
+                <outlet property="metroLabel" destination="F2q-ca-UIK" id="naK-Hj-mO6"/>
+                <outlet property="roundedMarker" destination="YVa-hA-EDM" id="ce7-Nd-vQU"/>
+                <outlet property="titleLabel" destination="MKO-MQ-FJp" id="Y0Q-2i-4mH"/>
+            </connections>
+            <point key="canvasLocation" x="108" y="575.71214392803597"/>
+        </view>
+    </objects>
+</document>

@@ -1,0 +1,15 @@
+/* 
+  InfoPlist.strings
+  branding
+
+  Created by Denis Tikhomirov on 12.02.2020.
+  Copyright © 2020 Ostrenkiy. All rights reserved.
+*/
+
+"NSLocationWhenInUseUsageDescription" = "We would like to display the closest to you places and send you notifications";
+"NSLocationAlwaysAndWhenInUseUsageDescription" = "We would like to display the closest to you places and send you notifications";
+"NSLocationAlwaysUsageDescription" = "We would like to display the closest to you places and send you notifications.";
+"NSCalendarsUsageDescription" = "We want to add event in your calendar.";
+"NSCameraUsageDescription" = "";
+LoyaltyShortcut = "";
+TicketsShortcut = "";

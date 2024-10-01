@@ -1,0 +1,12 @@
+{
+  "images" : [
+    {
+      "filename" : "Icon_achievement_guide_inactive.pdf",
+      "idiom" : "universal"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}

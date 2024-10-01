@@ -1,0 +1,17 @@
+/* 
+  InfoPlist.strings
+  branding
+
+  Created by Denis Tikhomirov on 12.02.2020.
+  Copyright © 2020 Ostrenkiy. All rights reserved.
+*/
+
+"NSLocationWhenInUseUsageDescription" = "We would like to display the closest to you places and send you notifications";
+"NSLocationAlwaysAndWhenInUseUsageDescription" = "We would like to display the closest to you places and send you notifications";
+"NSLocationAlwaysUsageDescription" = "We would like to display the closest to you places and send you notifications.";
+"NSCalendarsUsageDescription" = "We want to add event in your calendar.";
+"NSCameraUsageDescription" = "You can scan QR on the places and get Moscow Seasons loyalty";
+"NSUserTrackingUsageDescription" = "Your data will be used to measure the effectiveness of advertising campaigns";
+LoyaltyShortcut = "Loyalty card";
+TicketsShortcut = "My tickets";
+DeleteUserPrompt = "Are you sure you want to delete your account?";

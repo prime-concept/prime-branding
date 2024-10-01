@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Moscowpattern.otf">
+            <string>Moscowpattern2-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="TimerTileView" customModule="Armenia_Guide" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="244" height="60"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="m3v-i2-6sH">
+                    <rect key="frame" x="10" y="38.5" width="220" height="14.5"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="249" verticalHuggingPriority="251" horizontalCompressionResistancePriority="749" text="Times and Eras" textAlignment="right" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xGU-zF-mYJ">
+                    <rect key="frame" x="123" y="12" width="107" height="18"/>
+                    <fontDescription key="fontDescription" type="system" weight="medium" pointSize="15"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="751" verticalCompressionResistancePriority="749" text="0:00:00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WmC-oe-sS2">
+                    <rect key="frame" x="10" y="2.5" width="92.5" height="31.5"/>
+                    <fontDescription key="fontDescription" name="Moscowpattern2-Regular" family="Moscowpattern2" pointSize="26"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="m3v-i2-6sH" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="10" id="00n-vS-uJZ"/>
+                <constraint firstItem="xGU-zF-mYJ" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="WmC-oe-sS2" secondAttribute="trailing" constant="5" id="71u-Yi-hz2"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="xGU-zF-mYJ" secondAttribute="trailing" constant="14" id="8aF-gu-LNQ"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="m3v-i2-6sH" secondAttribute="trailing" constant="14" id="8bQ-8C-ag2"/>
+                <constraint firstItem="WmC-oe-sS2" firstAttribute="leading" secondItem="m3v-i2-6sH" secondAttribute="leading" id="Khz-TD-6Hv"/>
+                <constraint firstItem="m3v-i2-6sH" firstAttribute="top" secondItem="WmC-oe-sS2" secondAttribute="bottom" constant="4.5" id="LmA-de-AmK"/>
+                <constraint firstItem="xGU-zF-mYJ" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="12" id="MFl-GB-EEI"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="m3v-i2-6sH" secondAttribute="bottom" constant="7" id="mSg-9a-nyS"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <connections>
+                <outlet property="counterLabel" destination="WmC-oe-sS2" id="7Ts-iF-RBp"/>
+                <outlet property="subtitleLabel" destination="m3v-i2-6sH" id="sSu-nA-suk"/>
+                <outlet property="titleLabel" destination="xGU-zF-mYJ" id="Qwi-Yl-tmq"/>
+            </connections>
+            <point key="canvasLocation" x="128" y="-154"/>
+        </view>
+    </objects>
+</document>

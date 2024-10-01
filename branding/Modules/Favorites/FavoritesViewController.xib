@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="FavoritesViewController" customModule="Armenia_Guide" customModuleProvider="target">
+            <connections>
+                <outlet property="containerView" destination="qnq-Jf-ust" id="zH5-mi-dcZ"/>
+                <outlet property="scrollView" destination="zmE-9v-Pcp" id="r4P-z8-FfE"/>
+                <outlet property="segmentedControl" destination="iJ1-DY-cHo" id="0uD-9y-7oJ"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zmE-9v-Pcp">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="60"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iJ1-DY-cHo" customClass="SegmentedControl" customModule="Armenia_Guide" customModuleProvider="target">
+                            <rect key="frame" x="0.0" y="0.0" width="375" height="48"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="48" id="1Yw-kx-jmp"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="60" id="50S-MF-1wt"/>
+                        <constraint firstItem="iJ1-DY-cHo" firstAttribute="centerX" secondItem="zmE-9v-Pcp" secondAttribute="centerX" id="5Kp-bL-nsV"/>
+                        <constraint firstItem="iJ1-DY-cHo" firstAttribute="leading" secondItem="zmE-9v-Pcp" secondAttribute="leading" id="XjM-J1-Vhm"/>
+                        <constraint firstAttribute="bottom" secondItem="iJ1-DY-cHo" secondAttribute="bottom" constant="10" id="hjw-BS-qeC"/>
+                        <constraint firstAttribute="trailing" secondItem="iJ1-DY-cHo" secondAttribute="trailing" id="nTa-Gj-OBo"/>
+                        <constraint firstItem="iJ1-DY-cHo" firstAttribute="top" secondItem="zmE-9v-Pcp" secondAttribute="top" id="rEC-0S-wHE"/>
+                    </constraints>
+                </scrollView>
+                <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qnq-Jf-ust">
+                    <rect key="frame" x="0.0" y="60" width="375" height="607"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="qnq-Jf-ust" secondAttribute="trailing" id="Byz-Gc-nIs"/>
+                <constraint firstItem="zmE-9v-Pcp" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="YVm-bP-sgb"/>
+                <constraint firstItem="zmE-9v-Pcp" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="aI8-l0-SIj"/>
+                <constraint firstAttribute="trailing" secondItem="zmE-9v-Pcp" secondAttribute="trailing" id="egV-UH-me5"/>
+                <constraint firstItem="qnq-Jf-ust" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="pEV-qo-Lfh"/>
+                <constraint firstItem="qnq-Jf-ust" firstAttribute="top" secondItem="zmE-9v-Pcp" secondAttribute="bottom" id="s6C-I6-vdn"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="qnq-Jf-ust" secondAttribute="bottom" id="vAA-rd-56L"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <point key="canvasLocation" x="138.40000000000001" y="152.47376311844079"/>
+        </view>
+    </objects>
+</document>

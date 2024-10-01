@@ -1,0 +1,22 @@
+### Headers settings
+company: Workigeeks
+
+### Xcode project settings
+project_name: branding
+xcodeproj_path: branding.xcodeproj
+
+### Code generation settings section
+# The main project target name
+project_targets: ['Moscow Seasons', 'Moscow Seasons TEST', 'Marche Guide', 'Marche Guide TEST', 'Planetarium', 'Armenia Guide', 'Tretyakov']
+
+# The file path for new modules
+project_file_path: /branding/Modules
+
+# The Xcode group path to new modules
+project_group_path: /branding/Modules
+
+catalogs:
+- 'https://github.com/alekla/generamba-templates'
+### Templates
+templates:
+- {name: 'mvp-wg'}

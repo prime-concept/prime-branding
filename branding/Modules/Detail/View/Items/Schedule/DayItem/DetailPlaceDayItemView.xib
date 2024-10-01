@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="8Zw-le-5Pl" customClass="DetailPlaceDayItemView" customModule="Armenia_Guide" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="60"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Понедельник" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4fL-Lb-uJH">
+                    <rect key="frame" x="15" y="5" width="106.5" height="50"/>
+                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="16"/>
+                    <color key="textColor" red="0.50196078431372548" green="0.50196078431372548" blue="0.50196078431372548" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="09:00 – 00:00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sLE-AE-d2r">
+                    <rect key="frame" x="291" y="20.5" width="108" height="19.5"/>
+                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="16"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="sLE-AE-d2r" firstAttribute="centerY" secondItem="4fL-Lb-uJH" secondAttribute="centerY" id="5vU-Vj-CUi"/>
+                <constraint firstItem="0TT-SN-ZYA" firstAttribute="trailing" secondItem="sLE-AE-d2r" secondAttribute="trailing" constant="15" id="PsL-DF-MMp"/>
+                <constraint firstItem="4fL-Lb-uJH" firstAttribute="leading" secondItem="0TT-SN-ZYA" secondAttribute="leading" constant="15" id="Xbh-68-LAc"/>
+                <constraint firstItem="4fL-Lb-uJH" firstAttribute="top" secondItem="0TT-SN-ZYA" secondAttribute="top" constant="5" id="jJ4-6o-mGr"/>
+                <constraint firstItem="0TT-SN-ZYA" firstAttribute="bottom" secondItem="4fL-Lb-uJH" secondAttribute="bottom" constant="5" id="jsy-vM-JpI"/>
+                <constraint firstItem="sLE-AE-d2r" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="4fL-Lb-uJH" secondAttribute="trailing" constant="10" id="v0K-12-66m"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="0TT-SN-ZYA"/>
+            <connections>
+                <outlet property="dayLabel" destination="4fL-Lb-uJH" id="Sry-RT-oiu"/>
+                <outlet property="timeLabel" destination="sLE-AE-d2r" id="Kd9-YV-e2x"/>
+            </connections>
+            <point key="canvasLocation" x="137.59999999999999" y="148.42578710644679"/>
+        </view>
+    </objects>
+</document>

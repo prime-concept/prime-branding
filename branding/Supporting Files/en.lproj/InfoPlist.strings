@@ -1,0 +1,15 @@
+/* 
+  InfoPlist.strings
+  branding
+
+  Created by Denis Tikhomirov on 26.09.2018.
+  Copyright © 2018 Ostrenkiy. All rights reserved.
+*/
+
+"NSLocationWhenInUseUsageDescription" = "We want to display the closest halls to you and for better reference point inside Planetarium.";
+"NSLocationAlwaysAndWhenInUseUsageDescription" = "We want to display the closest halls to you and for better reference point inside Planetarium.";
+"NSLocationAlwaysUsageDescription" = "We want to display the closest halls to you and for better reference point inside Planetarium.";
+"NSCalendarsUsageDescription" = "We want to add event in your calendar.";
+"NSCameraUsageDescription" = "You can scan QR on the places and get Moscow Seasons loyalty";
+LoyaltyShortcut = "Loyalty card";
+TicketsShortcut = "My tickets";

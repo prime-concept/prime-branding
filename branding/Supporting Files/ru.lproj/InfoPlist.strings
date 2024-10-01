@@ -1,0 +1,15 @@
+/* 
+  InfoPlist.strings
+  branding
+
+  Created by Denis Tikhomirov on 26.09.2018.
+  Copyright © 2018 Ostrenkiy. All rights reserved.
+*/
+
+"NSLocationWhenInUseUsageDescription" = "Мы хотим показывать ближайшие к вам заллы, а также для лучшего ориентира внутри Планетария";
+"NSLocationAlwaysAndWhenInUseUsageDescription" = "Мы хотим показывать ближайшие к вам заллы, а также для лучшего ориентира внутри Планетария";
+"NSLocationAlwaysUsageDescription" = "Мы хотим показывать ближайшие к вам заллы, а также для лучшего ориентира внутри Планетария";
+"NSCalendarsUsageDescription" = "Мы хотим добавлять события в ваш календарь.";
+"NSCameraUsageDescription" = "Чтобы можно было отсканировать QR на площадках и получить за это лояльность Московских Сезонов";
+LoyaltyShortcut = "Карта лояльности";
+TicketsShortcut = "Мои билеты";

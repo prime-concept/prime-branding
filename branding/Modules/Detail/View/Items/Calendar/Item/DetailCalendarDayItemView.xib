@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="DetailCalendarDayItemView" customModule="Armenia_Guide" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="43" height="67"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="сб" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vc0-8Y-BNl">
+                    <rect key="frame" x="0.0" y="7" width="43" height="14.5"/>
+                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="12"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="20" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HEO-1q-ZJd">
+                    <rect key="frame" x="0.0" y="23.5" width="43" height="19.5"/>
+                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="16"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="сен" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tEm-uZ-unt">
+                    <rect key="frame" x="0.0" y="45" width="43" height="16"/>
+                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="12"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="K95-AE-G1h" customClass="CalendarDayFakeButton" customModule="Armenia_Guide" customModuleProvider="target">
+                    <rect key="frame" x="0.0" y="0.0" width="43" height="67"/>
+                    <connections>
+                        <action selector="onItemClick:" destination="iN0-l3-epB" eventType="touchUpInside" id="G0l-Kq-i3Q"/>
+                    </connections>
+                </button>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="tEm-uZ-unt" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="0fG-70-MBX"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="HEO-1q-ZJd" secondAttribute="trailing" id="81R-NZ-lXx"/>
+                <constraint firstItem="tEm-uZ-unt" firstAttribute="top" secondItem="HEO-1q-ZJd" secondAttribute="bottom" constant="2" id="CX7-6N-s5d"/>
+                <constraint firstItem="K95-AE-G1h" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="Gvh-xq-HMQ"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="tEm-uZ-unt" secondAttribute="bottom" constant="6" id="NaJ-Ai-AVu"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="K95-AE-G1h" secondAttribute="bottom" id="Nns-Hc-loZ"/>
+                <constraint firstItem="K95-AE-G1h" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="POT-R7-CEu"/>
+                <constraint firstItem="Vc0-8Y-BNl" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="7" id="VUF-R7-769"/>
+                <constraint firstItem="Vc0-8Y-BNl" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="WTe-j7-vQp"/>
+                <constraint firstItem="HEO-1q-ZJd" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="YN7-wD-zcd"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="Vc0-8Y-BNl" secondAttribute="trailing" id="ZVf-SW-URK"/>
+                <constraint firstItem="K95-AE-G1h" firstAttribute="trailing" secondItem="vUN-kp-3ea" secondAttribute="trailing" id="Zf9-sz-yDO"/>
+                <constraint firstItem="HEO-1q-ZJd" firstAttribute="top" secondItem="Vc0-8Y-BNl" secondAttribute="bottom" constant="2" id="oeM-g0-rI1"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="tEm-uZ-unt" secondAttribute="trailing" id="z9x-jn-v2K"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="bottomLabel" destination="tEm-uZ-unt" id="g5g-hn-6AZ"/>
+                <outlet property="mainLabel" destination="HEO-1q-ZJd" id="1lg-5e-S4J"/>
+                <outlet property="topLabel" destination="Vc0-8Y-BNl" id="CBd-ge-teX"/>
+            </connections>
+            <point key="canvasLocation" x="31.199999999999999" y="103.89805097451276"/>
+        </view>
+    </objects>
+</document>

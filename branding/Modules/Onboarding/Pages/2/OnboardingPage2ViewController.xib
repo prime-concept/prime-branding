@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina5_5" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="OnboardingPage2ViewController" customModule="Armenia_Guide" customModuleProvider="target">
+            <connections>
+                <outlet property="nextButton" destination="skd-bj-kM7" id="Usn-B4-gkg"/>
+                <outlet property="screenshotImageView" destination="Prl-hm-EjK" id="cBp-JQ-0xW"/>
+                <outlet property="textLabel" destination="w53-T9-n3B" id="VxS-xr-Wvc"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="skd-bj-kM7">
+                    <rect key="frame" x="184.66666666666666" y="634.66666666666663" width="45" height="55.333333333333371"/>
+                    <state key="normal" title="Далее">
+                        <color key="titleColor" red="0.74901960779999999" green="0.74901960779999999" blue="0.74901960779999999" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="nextPressed:" destination="-1" eventType="touchUpInside" id="Ev8-yJ-ccG"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="752" text="СКИДКИ НА ЯРМАРКАХ ОТ 3% ПО КАРТЕ ЛОЯЛЬНОСТИ" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="w53-T9-n3B">
+                    <rect key="frame" x="50" y="161.66666666666666" width="314" height="40"/>
+                    <constraints>
+                        <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="40" id="Rco-9Q-3p9"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
+                    <color key="textColor" red="0.83137254900000002" green="0.062745098040000002" blue="0.21176470589999999" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="MF_Onboarding_2_ru" highlightedImage="MF_Onboarding_2_ru" translatesAutoresizingMaskIntoConstraints="NO" id="Prl-hm-EjK">
+                    <rect key="frame" x="0.0" y="166.66666666666663" width="414" height="448"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="Prl-hm-EjK" secondAttribute="height" multiplier="375:406" priority="999" id="MDh-mX-s1z"/>
+                    </constraints>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon-ms-logo-ru" translatesAutoresizingMaskIntoConstraints="NO" id="HfQ-0u-njC">
+                    <rect key="frame" x="50" y="60.000000000000007" width="314" height="66.666666666666686"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="HfQ-0u-njC" secondAttribute="height" multiplier="269:57" id="fdL-qZ-EZo"/>
+                    </constraints>
+                </imageView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="Prl-hm-EjK" secondAttribute="trailing" id="49w-x8-RXJ"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="skd-bj-kM7" secondAttribute="bottom" constant="46" id="4BA-qD-KvZ"/>
+                <constraint firstItem="Prl-hm-EjK" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" id="4Fj-cj-eRa"/>
+                <constraint firstItem="HfQ-0u-njC" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="60" id="9Qc-NH-xkt"/>
+                <constraint firstItem="w53-T9-n3B" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="50" id="Ilz-Si-PPc"/>
+                <constraint firstItem="skd-bj-kM7" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" id="JAK-om-nYf"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="HfQ-0u-njC" secondAttribute="trailing" constant="50" id="Rnr-em-aLK"/>
+                <constraint firstItem="HfQ-0u-njC" firstAttribute="width" secondItem="HfQ-0u-njC" secondAttribute="height" multiplier="269:57" id="VH7-Hs-Ot5"/>
+                <constraint firstItem="Prl-hm-EjK" firstAttribute="top" secondItem="HfQ-0u-njC" secondAttribute="bottom" constant="40" id="VSo-1y-qcm"/>
+                <constraint firstItem="Prl-hm-EjK" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="aUZ-dc-YrC"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="w53-T9-n3B" secondAttribute="trailing" constant="50" id="hGe-W1-9iM"/>
+                <constraint firstItem="skd-bj-kM7" firstAttribute="top" secondItem="Prl-hm-EjK" secondAttribute="bottom" constant="20" id="iR0-je-2No"/>
+                <constraint firstItem="HfQ-0u-njC" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="50" id="jBa-zK-D3a"/>
+                <constraint firstItem="Prl-hm-EjK" firstAttribute="top" secondItem="w53-T9-n3B" secondAttribute="bottom" constant="-35" id="uu2-T4-B7N"/>
+            </constraints>
+            <point key="canvasLocation" x="53.600000000000001" y="48.125937031484263"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="MF_Onboarding_2_ru" width="375" height="406"/>
+        <image name="icon-ms-logo-ru" width="269" height="57"/>
+    </resources>
+</document>

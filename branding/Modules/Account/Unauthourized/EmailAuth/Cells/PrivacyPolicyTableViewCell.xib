@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" rowHeight="61" id="5Qa-EL-6gS" customClass="PrivacyPolicyTableViewCell" customModule="Armenia_Guide" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="61"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="5Qa-EL-6gS" id="WpY-5c-XgX">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="60.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="pVU-yA-iaX">
+                        <rect key="frame" x="45" y="10" width="285" height="40.5"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <textInputTraits key="textInputTraits"/>
+                        <dataDetectorType key="dataDetectorTypes" link="YES"/>
+                    </textView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="pVU-yA-iaX" firstAttribute="top" secondItem="WpY-5c-XgX" secondAttribute="top" constant="10" id="5Jv-TN-aEk"/>
+                    <constraint firstItem="pVU-yA-iaX" firstAttribute="leading" secondItem="WpY-5c-XgX" secondAttribute="leading" constant="45" id="HQe-jZ-EjJ"/>
+                    <constraint firstAttribute="trailing" secondItem="pVU-yA-iaX" secondAttribute="trailing" constant="45" id="TSd-kr-bHM"/>
+                    <constraint firstAttribute="bottom" secondItem="pVU-yA-iaX" secondAttribute="bottom" constant="10" id="e9N-OT-Dcp"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="textViewInfo" destination="pVU-yA-iaX" id="7I1-mA-vmU"/>
+            </connections>
+            <point key="canvasLocation" x="138.40000000000001" y="147.97601199400302"/>
+        </tableViewCell>
+    </objects>
+</document>

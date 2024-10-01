@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="Hu8-LQ-hn7" customClass="DetailLoyaltyGoodsListView" customModule="MoscowSeasons" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="461"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="E73-y9-1x2">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="45"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="45" id="MoX-cu-8zf"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Zxh-xC-53D">
+                    <rect key="frame" x="0.0" y="45" width="375" height="0.0"/>
+                    <subviews>
+                        <collectionView multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="HKV-gS-U85">
+                            <rect key="frame" x="0.0" y="0.0" width="375" height="0.0"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="NbJ-sY-vXz">
+                                <size key="itemSize" width="50" height="50"/>
+                                <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                            </collectionViewFlowLayout>
+                        </collectionView>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" id="Aic-pW-ajG"/>
+                        <constraint firstItem="HKV-gS-U85" firstAttribute="leading" secondItem="Zxh-xC-53D" secondAttribute="leading" id="DI7-hx-ICD"/>
+                        <constraint firstAttribute="bottom" secondItem="HKV-gS-U85" secondAttribute="bottom" id="S6c-GL-m70"/>
+                        <constraint firstAttribute="trailing" secondItem="HKV-gS-U85" secondAttribute="trailing" id="k3C-XB-xwf"/>
+                        <constraint firstItem="HKV-gS-U85" firstAttribute="top" secondItem="Zxh-xC-53D" secondAttribute="top" id="zX6-CM-1sr"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="SIO-Et-LM0" firstAttribute="bottom" secondItem="Zxh-xC-53D" secondAttribute="bottom" priority="999" id="6Sl-g5-MjU"/>
+                <constraint firstItem="E73-y9-1x2" firstAttribute="top" secondItem="SIO-Et-LM0" secondAttribute="top" id="79Y-wb-WUB"/>
+                <constraint firstAttribute="trailing" secondItem="E73-y9-1x2" secondAttribute="trailing" id="Nmu-d1-FeS"/>
+                <constraint firstItem="Zxh-xC-53D" firstAttribute="top" secondItem="E73-y9-1x2" secondAttribute="bottom" id="RkC-mT-0rG"/>
+                <constraint firstItem="SIO-Et-LM0" firstAttribute="trailing" secondItem="Zxh-xC-53D" secondAttribute="trailing" id="VSx-Us-vdZ"/>
+                <constraint firstItem="Zxh-xC-53D" firstAttribute="leading" secondItem="SIO-Et-LM0" secondAttribute="leading" id="dEA-nF-vVL"/>
+                <constraint firstItem="E73-y9-1x2" firstAttribute="leading" secondItem="Hu8-LQ-hn7" secondAttribute="leading" id="yuH-tT-bST"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="SIO-Et-LM0"/>
+            <connections>
+                <outlet property="collectionView" destination="HKV-gS-U85" id="2p2-4V-yba"/>
+                <outlet property="heightConstraint" destination="Aic-pW-ajG" id="ytv-6o-cTa"/>
+                <outlet property="segemntContainerView" destination="E73-y9-1x2" id="cG7-nM-lvK"/>
+            </connections>
+            <point key="canvasLocation" x="33.5" y="-20.5"/>
+        </view>
+    </objects>
+</document>

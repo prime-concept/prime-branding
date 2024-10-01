@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="DetailQuestsCollectionView" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="461"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VSj-r3-klw">
+                    <rect key="frame" x="15" y="10" width="345" height="446"/>
+                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="12"/>
+                    <color key="textColor" red="0.50196078431372548" green="0.50196078431372548" blue="0.50196078431372548" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gam-kh-1uG">
+                    <rect key="frame" x="0.0" y="461" width="375" height="0.0"/>
+                    <subviews>
+                        <collectionView multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="UGx-ye-mYn">
+                            <rect key="frame" x="0.0" y="0.0" width="375" height="0.0"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="2PX-7d-ylA">
+                                <size key="itemSize" width="50" height="50"/>
+                                <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                            </collectionViewFlowLayout>
+                        </collectionView>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="UGx-ye-mYn" secondAttribute="trailing" id="OKI-pu-dM3"/>
+                        <constraint firstAttribute="bottom" secondItem="UGx-ye-mYn" secondAttribute="bottom" id="Q2e-P3-ELq"/>
+                        <constraint firstItem="UGx-ye-mYn" firstAttribute="top" secondItem="gam-kh-1uG" secondAttribute="top" id="cYO-3L-Idb"/>
+                        <constraint firstAttribute="height" id="lR2-yX-enq"/>
+                        <constraint firstItem="UGx-ye-mYn" firstAttribute="leading" secondItem="gam-kh-1uG" secondAttribute="leading" id="omP-pk-o2I"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="VSj-r3-klw" secondAttribute="trailing" constant="15" id="Bn2-u1-5nQ"/>
+                <constraint firstItem="gam-kh-1uG" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="MCC-16-Fu1"/>
+                <constraint firstItem="VSj-r3-klw" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="15" id="elZ-xb-HEM"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="gam-kh-1uG" secondAttribute="trailing" id="fsg-li-1SY"/>
+                <constraint firstItem="gam-kh-1uG" firstAttribute="top" secondItem="VSj-r3-klw" secondAttribute="bottom" constant="5" id="l3U-Sd-ff6"/>
+                <constraint firstItem="VSj-r3-klw" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="10" id="lHk-EW-ovV"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="gam-kh-1uG" secondAttribute="bottom" priority="999" id="v6N-mT-kPf"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <connections>
+                <outlet property="collectionView" destination="UGx-ye-mYn" id="3eX-z6-Pjg"/>
+                <outlet property="heightConstraint" destination="lR2-yX-enq" id="Wit-8z-u3H"/>
+                <outlet property="titleLabel" destination="VSj-r3-klw" id="F0k-zw-4Fh"/>
+            </connections>
+            <point key="canvasLocation" x="33.5" y="-20.5"/>
+        </view>
+    </objects>
+</document>

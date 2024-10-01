@@ -1,0 +1,3 @@
+[submodule "sdk_project_ios"]
+	path = sdk_project_ios
+	url = https://git.lgn.me/technolab/navigator/sdk-ios.git

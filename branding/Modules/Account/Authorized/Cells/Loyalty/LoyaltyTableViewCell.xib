@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="114" id="QtG-6g-vAX" customClass="LoyaltyTableViewCell" customModule="Armenia_Guide" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="385" height="183"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="QtG-6g-vAX" id="fY5-PV-NOv">
+                <rect key="frame" x="0.0" y="0.0" width="385" height="182.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="I0C-hb-qKi">
+                        <rect key="frame" x="15" y="15" width="355" height="155.5"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="I0C-hb-qKi" firstAttribute="leading" secondItem="fY5-PV-NOv" secondAttribute="leading" constant="15" id="A53-jq-Q5k"/>
+                    <constraint firstItem="I0C-hb-qKi" firstAttribute="top" secondItem="fY5-PV-NOv" secondAttribute="top" constant="15" id="F5U-wn-KLN"/>
+                    <constraint firstAttribute="trailing" secondItem="I0C-hb-qKi" secondAttribute="trailing" constant="15" id="Mg5-0B-nvr"/>
+                    <constraint firstAttribute="bottom" secondItem="I0C-hb-qKi" secondAttribute="bottom" constant="12" id="QuP-CJ-ZR3"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="view" destination="I0C-hb-qKi" id="Krg-R5-9hk"/>
+            </connections>
+            <point key="canvasLocation" x="170.40000000000001" y="165.96701649175412"/>
+        </tableViewCell>
+    </objects>
+</document>

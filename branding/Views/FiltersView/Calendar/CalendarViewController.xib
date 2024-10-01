@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CalendarViewController" customModule="Armenia_Guide" customModuleProvider="target">
+            <connections>
+                <outlet property="calendarView" destination="M1Y-Mv-loc" id="Smw-8h-FKg"/>
+                <outlet property="collectionView" destination="ey4-wi-pgJ" id="iok-Fe-vP9"/>
+                <outlet property="dayLabel" destination="MLT-wy-DZD" id="TAJ-qw-BUm"/>
+                <outlet property="view" destination="iN0-l3-epB" id="sNR-KS-BVn"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TiK-XG-oLu" customClass="DeckView" customModule="Armenia_Guide" customModuleProvider="target">
+                    <rect key="frame" x="0.0" y="521" width="414" height="375"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="День" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MLT-wy-DZD">
+                            <rect key="frame" x="15" y="30" width="384" height="30"/>
+                            <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="ey4-wi-pgJ">
+                            <rect key="frame" x="0.0" y="70" width="414" height="50"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="50" id="XER-s3-okX"/>
+                            </constraints>
+                            <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="mji-1K-cQ1">
+                                <size key="itemSize" width="50" height="50"/>
+                                <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                            </collectionViewFlowLayout>
+                        </collectionView>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yaZ-wJ-CbR">
+                            <rect key="frame" x="189" y="15" width="36" height="4"/>
+                            <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.34999999999999998" colorSpace="calibratedRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="36" id="aq6-if-aG5"/>
+                                <constraint firstAttribute="height" constant="4" id="nyD-QX-vTN"/>
+                            </constraints>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                    <integer key="value" value="2"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                        </view>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="M1Y-Mv-loc" customClass="CalendarView" customModule="Armenia_Guide" customModuleProvider="target">
+                            <rect key="frame" x="0.0" y="125" width="414" height="250"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="250" id="zFr-Wp-n3A"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="ey4-wi-pgJ" secondAttribute="trailing" id="6EV-xp-lYl"/>
+                        <constraint firstAttribute="trailing" secondItem="MLT-wy-DZD" secondAttribute="trailing" constant="15" id="9Ff-bl-Jbr"/>
+                        <constraint firstItem="ey4-wi-pgJ" firstAttribute="leading" secondItem="TiK-XG-oLu" secondAttribute="leading" id="XYv-1f-Uo8"/>
+                        <constraint firstAttribute="trailing" secondItem="M1Y-Mv-loc" secondAttribute="trailing" id="XmS-fo-kgM"/>
+                        <constraint firstItem="MLT-wy-DZD" firstAttribute="top" secondItem="yaZ-wJ-CbR" secondAttribute="top" constant="15" id="Z3e-bh-inP"/>
+                        <constraint firstAttribute="bottom" secondItem="M1Y-Mv-loc" secondAttribute="bottom" id="e9f-Ap-nZZ"/>
+                        <constraint firstItem="yaZ-wJ-CbR" firstAttribute="top" secondItem="TiK-XG-oLu" secondAttribute="top" constant="15" id="eJP-OU-CEF"/>
+                        <constraint firstItem="ey4-wi-pgJ" firstAttribute="top" secondItem="MLT-wy-DZD" secondAttribute="bottom" constant="10" id="h1X-js-O7T"/>
+                        <constraint firstItem="MLT-wy-DZD" firstAttribute="leading" secondItem="TiK-XG-oLu" secondAttribute="leading" constant="15" id="iLB-MP-qS0"/>
+                        <constraint firstItem="yaZ-wJ-CbR" firstAttribute="centerX" secondItem="TiK-XG-oLu" secondAttribute="centerX" id="mqn-6c-a0L"/>
+                        <constraint firstItem="M1Y-Mv-loc" firstAttribute="leading" secondItem="TiK-XG-oLu" secondAttribute="leading" id="vTj-cJ-l0R"/>
+                        <constraint firstItem="M1Y-Mv-loc" firstAttribute="top" secondItem="ey4-wi-pgJ" secondAttribute="bottom" constant="5" id="x0h-qz-e2a"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="TiK-XG-oLu" secondAttribute="trailing" id="fIY-wA-2QU"/>
+                <constraint firstAttribute="bottom" secondItem="TiK-XG-oLu" secondAttribute="bottom" id="rr1-Z8-f2s"/>
+                <constraint firstItem="TiK-XG-oLu" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="z4K-KN-V5b"/>
+                <constraint firstItem="TiK-XG-oLu" firstAttribute="top" relation="lessThanOrEqual" secondItem="vUN-kp-3ea" secondAttribute="top" constant="1000" id="z6c-pI-eLn"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <point key="canvasLocation" x="50.724637681159422" y="35.491071428571423"/>
+        </view>
+    </objects>
+</document>

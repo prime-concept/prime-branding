@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="INB-CW-h06" customClass="PopupRatingStarsView" customModule="MoscowFest" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="60"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="fo5-Rw-k9p">
+                    <rect key="frame" x="90" y="0.0" width="195" height="35"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8cR-Mt-Ren" customClass="RatingStarButton" customModule="MoscowFest" customModuleProvider="target">
+                            <rect key="frame" x="0.0" y="0.0" width="31" height="35"/>
+                            <state key="normal" image="rating_star"/>
+                        </button>
+                        <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ETa-fz-6DH" customClass="RatingStarButton" customModule="MoscowFest" customModuleProvider="target">
+                            <rect key="frame" x="41" y="0.0" width="31" height="35"/>
+                            <state key="normal" image="rating_star"/>
+                        </button>
+                        <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qle-RZ-FYt" customClass="RatingStarButton" customModule="MoscowFest" customModuleProvider="target">
+                            <rect key="frame" x="82" y="0.0" width="31" height="35"/>
+                            <state key="normal" image="rating_star"/>
+                        </button>
+                        <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ENr-PO-Bsl" customClass="RatingStarButton" customModule="MoscowFest" customModuleProvider="target">
+                            <rect key="frame" x="123" y="0.0" width="31" height="35"/>
+                            <state key="normal" image="rating_star"/>
+                        </button>
+                        <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FGl-eC-fS5" customClass="RatingStarButton" customModule="MoscowFest" customModuleProvider="target">
+                            <rect key="frame" x="164" y="0.0" width="31" height="35"/>
+                            <state key="normal" image="rating_star"/>
+                        </button>
+                    </subviews>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="35" id="1Qh-z2-D5K"/>
+                    </constraints>
+                </stackView>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="fo5-Rw-k9p" firstAttribute="top" secondItem="rVu-Ut-nsK" secondAttribute="top" id="nWb-F3-p2B"/>
+                <constraint firstItem="fo5-Rw-k9p" firstAttribute="centerX" secondItem="rVu-Ut-nsK" secondAttribute="centerX" id="rmQ-cV-gQ0"/>
+                <constraint firstItem="rVu-Ut-nsK" firstAttribute="bottom" secondItem="fo5-Rw-k9p" secondAttribute="bottom" constant="25" id="tSF-3W-LAZ"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="rVu-Ut-nsK"/>
+            <connections>
+                <outletCollection property="buttonStars" destination="FGl-eC-fS5" collectionClass="NSMutableArray" id="RMj-5E-42X"/>
+                <outletCollection property="buttonStars" destination="ENr-PO-Bsl" collectionClass="NSMutableArray" id="Jn8-2J-oVt"/>
+                <outletCollection property="buttonStars" destination="Qle-RZ-FYt" collectionClass="NSMutableArray" id="w73-H5-7cb"/>
+                <outletCollection property="buttonStars" destination="ETa-fz-6DH" collectionClass="NSMutableArray" id="ZEx-i2-F2w"/>
+                <outletCollection property="buttonStars" destination="8cR-Mt-Ren" collectionClass="NSMutableArray" id="JVw-cS-OJy"/>
+            </connections>
+            <point key="canvasLocation" x="53.600000000000001" y="205.99700149925039"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="rating_star" width="31" height="29"/>
+    </resources>
+</document>

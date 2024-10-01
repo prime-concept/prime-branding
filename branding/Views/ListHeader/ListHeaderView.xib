@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="ListHeaderView" customModule="Armenia_Guide" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="414"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NYZ-fQ-CNt" customClass="ImageCarouselView" customModule="Armenia_Guide" customModuleProvider="target">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="250"/>
+                    <viewLayoutGuide key="safeArea" id="FVC-pN-UPi"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="250" id="2TZ-oI-Nlb"/>
+                    </constraints>
+                </view>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3D9-Zl-jsb">
+                    <rect key="frame" x="15" y="260" width="345" height="100"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="100" id="6na-lr-zhV"/>
+                    </constraints>
+                    <string key="text">Отсебяшный текст. Отвечайте на вопросы
+и получайте баллы за правильные ответы. правильные ответы. </string>
+                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="16"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="1000" text="Текущие квесты" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rV1-We-UXI">
+                    <rect key="frame" x="15" y="380" width="345" height="24"/>
+                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="12"/>
+                    <color key="textColor" red="0.74901960784313726" green="0.74901960784313726" blue="0.74901960784313726" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <constraints>
+                <constraint firstItem="3D9-Zl-jsb" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="15" id="3eD-hr-8WO"/>
+                <constraint firstItem="NYZ-fQ-CNt" firstAttribute="trailing" secondItem="vUN-kp-3ea" secondAttribute="trailing" id="Fvs-RA-W54"/>
+                <constraint firstAttribute="trailing" secondItem="rV1-We-UXI" secondAttribute="trailing" constant="15" id="Gr3-eN-Qdx"/>
+                <constraint firstItem="rV1-We-UXI" firstAttribute="top" secondItem="3D9-Zl-jsb" secondAttribute="bottom" constant="20" id="PL0-3d-YGO"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="3D9-Zl-jsb" secondAttribute="trailing" constant="15" id="QKp-D8-dpt"/>
+                <constraint firstItem="NYZ-fQ-CNt" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="QRF-U0-QlT"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="rV1-We-UXI" secondAttribute="bottom" constant="10" id="Wag-k3-VkC"/>
+                <constraint firstItem="3D9-Zl-jsb" firstAttribute="top" secondItem="NYZ-fQ-CNt" secondAttribute="bottom" constant="10" id="fOe-kR-nEb"/>
+                <constraint firstItem="rV1-We-UXI" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="15" id="tmy-ve-Akg"/>
+                <constraint firstItem="NYZ-fQ-CNt" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="tre-k2-I9n"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="imageCarouselView" destination="NYZ-fQ-CNt" id="5Vo-B7-0ch"/>
+                <outlet property="infoLabel" destination="3D9-Zl-jsb" id="Rck-ug-2eI"/>
+                <outlet property="textHeightConstraint" destination="6na-lr-zhV" id="Rk6-dS-f5n"/>
+                <outlet property="typeLabel" destination="rV1-We-UXI" id="c0D-d1-Hdx"/>
+            </connections>
+            <point key="canvasLocation" x="128.80000000000001" y="-205.09745127436284"/>
+        </view>
+    </objects>
+</document>

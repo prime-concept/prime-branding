@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="TicketTileView" customModule="Armenia_Guide" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="241" height="153"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2uN-bH-EdL">
+                    <rect key="frame" x="20" y="20" width="18" height="25"/>
+                    <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <state key="normal" image="share"/>
+                    <connections>
+                        <action selector="onShareButtonTouch:" destination="iN0-l3-epB" eventType="touchUpInside" id="R0V-ps-TwV"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="k16-AO-pN2">
+                    <rect key="frame" x="20" y="133" width="0.0" height="0.0"/>
+                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="15"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="su3-Li-leJ">
+                    <rect key="frame" x="20" y="138" width="0.0" height="0.0"/>
+                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="14"/>
+                    <color key="textColor" red="1" green="1" blue="1" alpha="0.80000000000000004" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="2uN-bH-EdL" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="20" id="7ia-AU-rSD"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="su3-Li-leJ" secondAttribute="bottom" constant="15" id="C2i-2F-1gb"/>
+                <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="k16-AO-pN2" secondAttribute="trailing" constant="10" id="GQD-xy-t8J"/>
+                <constraint firstItem="2uN-bH-EdL" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="20" id="X22-wt-DoF"/>
+                <constraint firstItem="su3-Li-leJ" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="20" id="YIo-JU-q37"/>
+                <constraint firstItem="su3-Li-leJ" firstAttribute="top" secondItem="k16-AO-pN2" secondAttribute="bottom" constant="5" id="fAp-gf-p5z"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="su3-Li-leJ" secondAttribute="trailing" constant="10" id="hbu-i4-ZQN"/>
+                <constraint firstItem="k16-AO-pN2" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="20" id="ijL-4v-vU9"/>
+                <constraint firstItem="k16-AO-pN2" firstAttribute="top" relation="greaterThanOrEqual" secondItem="2uN-bH-EdL" secondAttribute="bottom" constant="23" id="x5s-Vd-hGp"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <connections>
+                <outlet property="shareButton" destination="2uN-bH-EdL" id="OHy-tL-qX1"/>
+                <outlet property="subtitleLabel" destination="su3-Li-leJ" id="THY-XW-f1q"/>
+                <outlet property="titleLabel" destination="k16-AO-pN2" id="LOB-r3-KyY"/>
+            </connections>
+            <point key="canvasLocation" x="31.199999999999999" y="-96.7016491754123"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="share" width="18" height="25"/>
+    </resources>
+</document>
